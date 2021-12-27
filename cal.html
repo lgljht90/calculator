@@ -4,6 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<style type="text/css">
+		.panel{
+			transform: translate(-50%, -50%);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			padding: 20px;
+			resize: both;
+			overflow: auto;
+			width: 25%;
+			background-color: blueviolet;
+		}
+	</style>
 </head>
 <script type="text/javascript">
 	function cal(){
@@ -28,19 +41,21 @@
 	}
 </script>
 <body>
-	<h2 class="header">JS Calculator</h2>
-	<label>Number 1</label><br>
-	<input type="number" id="num1"><br>
-	<label>Number 2</label><br>
-	<input type="number" id="num2"><br>
-	<label>Calculation</label><br>
-	<select id="operator">
-		<option value="+">+</option>
-		<option value="-">-</option>
-		<option value="*">*</option>
-		<option value="/">/</option>
-	</select><br>
-	<input type="button" value="calculate" onclick="cal()"><br>
-	Result=<label id="result"></label>
+	<div class="panel">
+		<h2 class="header">JS Calculator</h2>
+		<label>Number 1</label><br>
+		<input type="number" id="num1"><br>
+		<label>Number 2</label><br>
+		<input type="number" id="num2"><br>
+		<label>Calculation</label><br>
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select><br>
+		<input type="button" value="calculate" onclick="cal()"><br>
+		Result=<label id="result"></label>
+	</div>
 </body>
 </html>
